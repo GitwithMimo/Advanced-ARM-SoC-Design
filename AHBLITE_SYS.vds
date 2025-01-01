@@ -1,0 +1,453 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jan  1 22:26:24 2025
+# Process ID: 14064
+# Current directory: C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/assignment/project/ARM_mini_project/ARM_mini_project.runs/synth_1
+# Command line: vivado.exe -log AHBLITE_SYS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AHBLITE_SYS.tcl
+# Log file: C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/assignment/project/ARM_mini_project/ARM_mini_project.runs/synth_1/AHBLITE_SYS.vds
+# Journal file: C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/assignment/project/ARM_mini_project/ARM_mini_project.runs/synth_1\vivado.jou
+# Running On: VoC, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 7887 MB
+#-----------------------------------------------------------
+source AHBLITE_SYS.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 473.035 ; gain = 178.633
+Command: synth_design -top AHBLITE_SYS -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18352
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1324.250 ; gain = 440.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'TDI_NS', assumed default net type 'wire' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHBLITE_SYS.v:181]
+INFO: [Synth 8-11241] undeclared symbol 'HREADYOUT_TIMER', assumed default net type 'wire' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHBLITE_SYS.v:265]
+INFO: [Synth 8-6157] synthesizing module 'AHBLITE_SYS' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHBLITE_SYS.v:38]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [E:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [E:/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6157] synthesizing module 'CORTEXM0INTEGRATION' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/CORTEXM0INTEGRATION.v:32]
+INFO: [Synth 8-6157] synthesizing module 'cm0_dbg_reset_sync' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/cm0_dbg_reset_sync.v:23]
+	Parameter PRESENT bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cm0_dbg_reset_sync' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/cm0_dbg_reset_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CORTEXM0DS' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/CORTEXM0DS.v:28]
+INFO: [Synth 8-6157] synthesizing module 'cortexm0ds_logic' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/cortexm0ds_logic.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'cortexm0ds_logic' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/cortexm0ds_logic.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'CORTEXM0DS' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/CORTEXM0DS.v:28]
+INFO: [Synth 8-6157] synthesizing module 'CORTEXM0DAP' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/CORTEXM0DAP.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CORTEXM0DAP' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/CORTEXM0DAP.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cortexm0_wic' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/cortexm0_wic.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'cortexm0_wic' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/cortexm0_wic.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'CORTEXM0INTEGRATION' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCE_M0_CORE/CORTEXM0INTEGRATION.v:32]
+INFO: [Synth 8-6157] synthesizing module 'AHBDCD' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHBDCD.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'AHBDCD' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHBDCD.v:38]
+INFO: [Synth 8-6157] synthesizing module 'AHBMUX' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHBMUX.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'AHBMUX' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHBMUX.v:38]
+INFO: [Synth 8-6157] synthesizing module 'AHB2MEM' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHB2BRAM.v:11]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/arm_mmmm/mymini.hex' is read successfully [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHB2BRAM.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'AHB2MEM' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHB2BRAM.v:11]
+INFO: [Synth 8-6157] synthesizing module 'AHBTIMER' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_TIMER/AHB_TIMER/AHBTIMER.v:38]
+INFO: [Synth 8-6157] synthesizing module 'prescaler' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_TIMER/AHB_TIMER/prescaler.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'prescaler' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_TIMER/AHB_TIMER/prescaler.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'AHBTIMER' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_TIMER/AHB_TIMER/AHBTIMER.v:38]
+INFO: [Synth 8-6157] synthesizing module 'AHB2LED' [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/AHB_LED/AHB2LED.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AHB2LED' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/AHB_LED/AHB2LED.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AHBLITE_SYS' (0#1) [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHBLITE_SYS.v:38]
+WARNING: [Synth 8-6014] Unused sequential element APhase_HRADDR_reg was removed.  [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHB2BRAM.v:61]
+WARNING: [Synth 8-6014] Unused sequential element rHADDR_reg was removed.  [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/AHB_LED/AHB2LED.v:38]
+WARNING: [Synth 8-6014] Unused sequential element rHSIZE_reg was removed.  [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/AHB_LED/AHB2LED.v:41]
+WARNING: [Synth 8-3848] Net TDI_NS in module/entity AHBLITE_SYS does not have driver. [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_LED _GPIO/HDL_SOURCES/AHBLITE_SYS.v:181]
+WARNING: [Synth 8-7129] Port HADDR[31] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[30] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[29] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[28] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[27] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[26] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[25] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[24] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[23] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[22] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[21] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[20] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[19] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[18] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[17] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[16] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[15] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[14] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[13] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[12] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[11] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[10] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[9] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[8] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[7] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[6] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[5] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[4] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[3] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[2] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[1] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[0] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HSIZE[2] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HSIZE[1] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HSIZE[0] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[31] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[30] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[29] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[28] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[27] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[26] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[25] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[24] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[23] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[22] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[21] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[20] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[19] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[18] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[17] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[16] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[15] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[14] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[13] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[12] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[11] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[10] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[9] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HWDATA[8] in module AHB2LED is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[23] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[22] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[21] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[20] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[19] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[18] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[17] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[16] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[15] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[14] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[13] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[12] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[11] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[10] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[9] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[8] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[7] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[6] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[5] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[4] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[3] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[2] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[1] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port HADDR[0] in module AHBDCD is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port nRESET in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICLOAD in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICCLEAR in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[33] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[32] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[31] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[30] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[29] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[28] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[27] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[26] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[25] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[24] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[23] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[22] in module cortexm0_wic is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WICINT[21] in module cortexm0_wic is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1644.391 ; gain = 760.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1644.391 ; gain = 760.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1644.391 ; gain = 760.473
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1644.391 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/assignment/project/ARM_mini_project/ARM_mini_project.srcs/constrs_1/new/ahbsys_led_timer.xdc]
+Finished Parsing XDC File [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/assignment/project/ARM_mini_project/ARM_mini_project.srcs/constrs_1/new/ahbsys_led_timer.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/assignment/project/ARM_mini_project/ARM_mini_project.srcs/constrs_1/new/ahbsys_led_timer.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AHBLITE_SYS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AHBLITE_SYS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1749.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1749.297 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'last_HADDR_reg' and it is trimmed from '32' to '4' bits. [C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/LAB RESOURCES_TIMER/AHB_TIMER/AHBTIMER.v:102]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   34 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 58    
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 932   
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	   3 Input   32 Bit        Muxes := 1     
+	  11 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 315   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP Tz1l850, operation Mode is: A*B.
+DSP Report: operator Tz1l850 is absorbed into DSP Tz1l850.
+DSP Report: operator Tz1l850 is absorbed into DSP Tz1l850.
+DSP Report: Generating DSP Tz1l850, operation Mode is: A*B.
+DSP Report: operator Tz1l850 is absorbed into DSP Tz1l850.
+DSP Report: operator Tz1l850 is absorbed into DSP Tz1l850.
+DSP Report: Generating DSP Tz1l850, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Tz1l850 is absorbed into DSP Tz1l850.
+DSP Report: operator Tz1l850 is absorbed into DSP Tz1l850.
+WARNING: [Synth 8-3917] design AHBLITE_SYS has port TDO_SWO driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:19 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+ Sort Area is  Tz1l850_0 : 0 0 : 2701 4456 : Used 1 time 0
+ Sort Area is  Tz1l850_0 : 0 1 : 1755 4456 : Used 1 time 0
+ Sort Area is  Tz1l850_3 : 0 0 : 1755 1755 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|AHBLITE_SYS | uAHB2MEM/memory_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cortexm0ds_logic | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm0ds_logic | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm0ds_logic | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:25 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|AHBLITE_SYS | uAHB2MEM/memory_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance uAHB2MEM/memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance uAHB2MEM/memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance uAHB2MEM/memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance uAHB2MEM/memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:31 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:35 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:35 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:35 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:35 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:35 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:35 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cortexm0ds_logic | A*B          | 15     | 18     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm0ds_logic | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm0ds_logic | PCIN>>17+A*B | 30     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    52|
+|3     |DSP48E1  |     3|
+|4     |LUT1     |    69|
+|5     |LUT2     |   292|
+|6     |LUT3     |   251|
+|7     |LUT4     |   295|
+|8     |LUT5     |   562|
+|9     |LUT6     |  1742|
+|10    |MUXF7    |     4|
+|11    |RAMB36E1 |     4|
+|15    |FDCE     |   290|
+|16    |FDPE     |   705|
+|17    |FDRE     |    12|
+|18    |IBUF     |     2|
+|19    |OBUF     |     9|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:35 . Memory (MB): peak = 1749.297 ; gain = 865.379
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:33 . Memory (MB): peak = 1749.297 ; gain = 760.473
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:36 . Memory (MB): peak = 1749.297 ; gain = 865.379
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1749.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'AHBLITE_SYS' is not ideal for floorplanning, since the cellview 'cortexm0ds_logic' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1749.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7b9fe8dc
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:43 . Memory (MB): peak = 1749.297 ; gain = 1276.262
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1749.297 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/urtru/OneDrive/Desktop/ARM_SoC_LAB/assignment/project/ARM_mini_project/ARM_mini_project.runs/synth_1/AHBLITE_SYS.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AHBLITE_SYS_utilization_synth.rpt -pb AHBLITE_SYS_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  1 22:28:17 2025...
